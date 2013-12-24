@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //主程序视图加载..................
+    //主程序视图加载
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
@@ -21,6 +21,9 @@
     navController.navigationBarHidden = YES;
      self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 							
