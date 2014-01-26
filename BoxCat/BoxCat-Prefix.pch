@@ -14,3 +14,12 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define UMENG_APPKEY  @"52d7889c56240b63fe002532"
+
+
+#define MY_BANNER_UNIT_ID  @"a152d78952ef857"
+
+#define  SHOW_ADVIEW   YES
+
+#define Leaderboard_ID    @"total_score"   

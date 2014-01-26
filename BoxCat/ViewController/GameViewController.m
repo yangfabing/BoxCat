@@ -12,11 +12,17 @@
 #import "ResultViewController.h"
 #import "UserData.h"
 
-@interface GameViewController ()<DotsResultDelegate>
+#import "GADBannerView.h"
+#import "GADRequest.h"
+
+
+@interface GameViewController ()<DotsResultDelegate, GADBannerViewDelegate>
 {
+    GADBannerView *admobView;
     
     NSInteger redDotsCount;
     NSInteger currentScore;
+    NSArray *redArray;
     
 }
 
@@ -38,14 +44,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-//    self.scene = [[DotsScene alloc] initWithSize:CGSizeMake(320, 320)];
-//    NSArray *tempArray = [[UserData sharedUserData] getRedDotsWithLevel:1];
-//    [_scene installAllDotWithArray:tempArray];
-//    _scene.delegate = self;
-//    [self.view addSubview:_scene];
+    self.navigationController.navigationBarHidden = YES;
     
     
+    [self loadADView];
 }
 
 - (BOOL)shouldAutorotate
@@ -70,6 +72,7 @@
 - (IBAction)onPauseClick:(id)sender
 {
     PauseViewController *controller = [[PauseViewController alloc] initWithNibName:@"PauseViewController" bundle:nil];
+    controller.gameController = self;
     [self.navigationController pushViewController:controller animated:YES];
     
 }
@@ -78,6 +81,7 @@
 #pragma mark - 
 #pragma mark - Custom Methods
 
+//通过关卡初始化
 -(void)restartGameWithCurrentLevel:(NSInteger)level
 {
     if (self.scene)
@@ -87,15 +91,45 @@
     }
     
     self.scene = [[DotsScene alloc] initWithSize:CGSizeMake(320, 320)];
-    NSArray *tempArray = [[UserData sharedUserData] getRedDotsWithLevel:level];
+    redArray = [[UserData sharedUserData] getRedDotsWithLevel:level];
+    if (redArray.count == 0) {
+       NSMutableArray *array = [NSMutableArray array];
+        for (int i = 0; i < 5; i++)
+        {
+            CGPoint point = CGPointMake(arc4random()%DOT_X, arc4random()%DOT_Y);
+            if (point.x != floor(DOT_X/2) || point.y != floor(DOT_Y/2)) {
+                [array addObject:[NSValue valueWithCGPoint:point]];
+            }
+        }
+        redArray = array;
+    }
+    redDotsCount = redArray.count;
     
-    redDotsCount = tempArray.count;
-    
-    [_scene installAllDotWithArray:tempArray];
+    [_scene installAllDotWithArray:redArray];
     _scene.delegate = self;
     [self.view addSubview:_scene];
     
     [self refreshScore];
+}
+
+//重新开始
+-(void)playAgain
+{
+    if (self.scene)
+    {
+        [self.scene removeFromSuperview];
+        self.scene.delegate = nil;
+    }
+    self.scene = [[DotsScene alloc] initWithSize:CGSizeMake(320, 320)];
+    
+    redDotsCount = redArray.count;
+    
+    [_scene installAllDotWithArray:redArray];
+    _scene.delegate = self;
+    [self.view addSubview:_scene];
+    
+    [self refreshScore];
+
 }
 
 
@@ -170,4 +204,92 @@
          [self.navigationController pushViewController:controller animated:YES];
      }];
 }
+
+
+#pragma  mark - 
+#pragma mark - AD Delegate
+
+-(void)loadADView
+{
+    
+    
+    if (!SHOW_ADVIEW) {
+        return;
+    }
+    
+    // 在屏幕底部创建标准尺寸的视图。
+    admobView = [[GADBannerView alloc]
+                 initWithFrame:CGRectMake(0.0,
+                                          self.view.frame.size.height -
+                                          GAD_SIZE_320x50.height,
+                                          GAD_SIZE_320x50.width,
+                                          GAD_SIZE_320x50.height)];
+    
+    // 指定广告的“单元标识符”，也就是您的 AdMob 发布商 ID。
+    admobView.adUnitID = MY_BANNER_UNIT_ID;
+    
+    admobView.delegate = self;
+    
+    // 告知运行时文件，在将用户转至广告的展示位置之后恢复哪个 UIViewController
+    // 并将其添加至视图层级结构。
+    admobView.rootViewController = self;
+    [self.view addSubview:admobView];
+    
+    // 启动一般性请求并在其中加载广告。
+//    [admobView loadRequest:[GADRequest request]];
+    [admobView loadRequest:[self createRequest]];
+    
+}
+
+-(void)hideADView{
+    if (admobView)
+    {
+        [admobView removeFromSuperview];
+    }
+}
+
+
+#pragma mark GADRequest generation
+
+// Here we're creating a simple GADRequest and whitelisting the simulator
+// and two devices for test ads. You should request test ads during development
+// to avoid generating invalid impressions and clicks.
+- (GADRequest *)createRequest {
+    GADRequest *request = [GADRequest request];
+    
+    //Make the request for a test ad
+    request.testDevices = [NSArray arrayWithObjects:
+                           GAD_SIMULATOR_ID,                               // Simulator
+                           nil];
+    
+    return request;
+}
+
+
+
+#pragma mark GADBannerViewDelegate impl
+
+// Since we've received an ad, let's go ahead and set the frame to display it.
+- (void)adViewDidReceiveAd:(GADBannerView *)adView {
+    //    NSLog(@"Received ad");
+    
+    [UIView animateWithDuration:0.5 animations:^ {
+        adView.frame = CGRectMake(0.0,
+                                  self.view.frame.size.height -
+                                  adView.frame.size.height,
+                                  adView.frame.size.width,
+                                  adView.frame.size.height);
+        
+    }];
+}
+
+- (void)adView:(GADBannerView *)view
+didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"Failed to receive ad with error: %@", [error localizedFailureReason]);
+}
+
+
+
+
+
 @end

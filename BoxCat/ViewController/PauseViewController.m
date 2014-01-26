@@ -7,6 +7,7 @@
 //
 
 #import "PauseViewController.h"
+#import "GameViewController.h"
 
 @interface PauseViewController ()
 
@@ -44,7 +45,10 @@
 {
     [self.navigationController popViewControllerAnimated:YES];
 
-    
+    if (self.gameController)
+    {
+        [self.gameController playAgain];
+    }
 }
 
 - (IBAction)onMainClick:(id)sender

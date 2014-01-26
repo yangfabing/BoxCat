@@ -8,9 +8,13 @@
 
 #import "MainViewController.h"
 #import "GameViewController.h"
+#import "SettingViewController.h"
+
 #import "UserData.h"
 
-@interface MainViewController ()
+#import "GameCenterManager.h"
+
+@interface MainViewController ()<GameCenterManagerDelegate>
 
 @end
 
@@ -28,9 +32,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [[GameCenterManager sharedManager] setDelegate:self];
+    
+    // Array of leaderboard ID's to get high scores for
+//    NSArray *leaderboardIDs = [NSArray arrayWithObjects:@"Leaderboard1", @"Leaderboard2", nil];
+//    
+//    // Returns a dictionary with leaderboard ID's as keys and high scores as values
+//    NSDictionary *highScores = [[GameCenterManager sharedManager] highScoreForLeaderboards:leaderboardIDs];
+    // Returns an integer value as a high scores
+//    int highScore = [[GameCenterManager sharedManager] highScoreForLeaderboard:Leaderboard_ID];
+//    NSLog(@"%d",highScore);
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -50,4 +69,20 @@
     [controller restartGameWithCurrentLevel:level];
     [self.navigationController pushViewController:controller animated:YES];
 }
+
+- (IBAction)onSettingClick:(id)sender {
+    SettingViewController *controller =[[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+
+
+#pragma mark - GameCenter Manager Delegate
+
+- (void)gameCenterManager:(GameCenterManager *)manager authenticateUser:(UIViewController *)gameCenterLoginController {
+    [self presentViewController:gameCenterLoginController animated:YES completion:^{
+        NSLog(@"Finished Presenting Authentication Controller");
+    }];
+}
+
 @end

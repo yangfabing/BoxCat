@@ -21,4 +21,6 @@
 
 //开始游戏。初始化关卡
 -(void)restartGameWithCurrentLevel:(NSInteger)level;
+-(void)playAgain;
+
 @end

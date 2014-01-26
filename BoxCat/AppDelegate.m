@@ -9,10 +9,22 @@
 #import "AppDelegate.h"
 #import "GameViewController.h"
 #import "MainViewController.h"
+#import "MobClick.h"
+
+
+#import "GameCenterManager.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    //开启友盟统计s
+//    [MobClick startWithAppkey:UMENG_APPKEY reportPolicy:REALTIME channelId:nil];
+//    [MobClick setLogEnabled:YES];
+    
+//    [UMFeedback showFeedback:self withAppkey:UMENG_APPKEY];
+
     //主程序视图加载
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
@@ -22,7 +34,7 @@
      self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     
-    
+    [[GameCenterManager sharedManager] setupManager];
     
     return YES;
 }
@@ -53,5 +65,24 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+- (void) authenticateLocalPlayer
+ {
+    [[GKLocalPlayer localPlayer] authenticateWithCompletionHandler:^(NSError *error){
+         if (error == nil) {
+             //成功处理
+             NSLog(@"成功");
+             NSLog(@"1--alias--.%@",[GKLocalPlayer localPlayer].alias);
+           NSLog(@"2--authenticated--.%d",[GKLocalPlayer localPlayer].authenticated);
+           NSLog(@"3--isFriend--.%d",[GKLocalPlayer localPlayer].isFriend);
+            NSLog(@"4--playerID--.%@",[GKLocalPlayer localPlayer].playerID);
+            NSLog(@"5--underage--.%d",[GKLocalPlayer localPlayer].underage);
+         }else {
+            //错误处理
+            NSLog(@"失败  %@",error);
+        }
+     }];
+ }
 
 @end

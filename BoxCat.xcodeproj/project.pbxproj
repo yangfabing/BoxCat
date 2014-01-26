@@ -17,6 +17,27 @@
 		B2205CD6180BDF2D00591675 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2205CD5180BDF2D00591675 /* main.m */; };
 		B2205CDA180BDF2D00591675 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2205CD9180BDF2D00591675 /* AppDelegate.m */; };
 		B2205CE7180BDF2D00591675 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2205CE6180BDF2D00591675 /* Images.xcassets */; };
+		B22C04E8188786570022DDB5 /* level_9.txt in Resources */ = {isa = PBXBuildFile; fileRef = B22C04E1188786570022DDB5 /* level_9.txt */; };
+		B22C04E9188786570022DDB5 /* level_10.txt in Resources */ = {isa = PBXBuildFile; fileRef = B22C04E2188786570022DDB5 /* level_10.txt */; };
+		B22C04EA188786570022DDB5 /* level_11.txt in Resources */ = {isa = PBXBuildFile; fileRef = B22C04E3188786570022DDB5 /* level_11.txt */; };
+		B22C04EB188786570022DDB5 /* level_12.txt in Resources */ = {isa = PBXBuildFile; fileRef = B22C04E4188786570022DDB5 /* level_12.txt */; };
+		B22C04EC188786570022DDB5 /* level_13.txt in Resources */ = {isa = PBXBuildFile; fileRef = B22C04E5188786570022DDB5 /* level_13.txt */; };
+		B22C04ED188786570022DDB5 /* level_14.txt in Resources */ = {isa = PBXBuildFile; fileRef = B22C04E6188786570022DDB5 /* level_14.txt */; };
+		B22C04EE188786570022DDB5 /* level_15.txt in Resources */ = {isa = PBXBuildFile; fileRef = B22C04E7188786570022DDB5 /* level_15.txt */; };
+		B22C05011887BDE50022DDB5 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B22C04F01887BDE50022DDB5 /* libMobClickLibrary.a */; };
+		B22C05021887BDE50022DDB5 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B22C04FC1887BDE50022DDB5 /* libGoogleAdMobAds.a */; };
+		B22C05031887BDE50022DDB5 /* libUMFeedback.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B22C04FE1887BDE50022DDB5 /* libUMFeedback.a */; };
+		B22C05041887BDE50022DDB5 /* umFeedback.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B22C04FF1887BDE50022DDB5 /* umFeedback.bundle */; };
+		B22C05061887C1E10022DDB5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B22C05051887C1E10022DDB5 /* libz.dylib */; };
+		B22C05081887C25D0022DDB5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22C05071887C25D0022DDB5 /* AudioToolbox.framework */; };
+		B22C050A1887C2650022DDB5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22C05091887C2650022DDB5 /* MessageUI.framework */; };
+		B22C050C1887C2700022DDB5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22C050B1887C2700022DDB5 /* SystemConfiguration.framework */; };
+		B22C050E1887C2C40022DDB5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22C050D1887C2C40022DDB5 /* StoreKit.framework */; };
+		B22C05101887C3090022DDB5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22C050F1887C3090022DDB5 /* AdSupport.framework */; };
+		B22C05131887C81A0022DDB5 /* btn_return_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B22C05111887C81A0022DDB5 /* btn_return_normal.png */; };
+		B22C05141887C81A0022DDB5 /* btn_return_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = B22C05121887C81A0022DDB5 /* btn_return_pressed.png */; };
+		B22C05181887C86A0022DDB5 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22C05161887C86A0022DDB5 /* SettingViewController.m */; };
+		B22C05191887C86A0022DDB5 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22C05171887C86A0022DDB5 /* SettingViewController.xib */; };
 		B24A679E182CB86F005DB707 /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24A6799182CB86F005DB707 /* BaseNavViewController.m */; };
 		B24A679F182CB86F005DB707 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24A679B182CB86F005DB707 /* BasicViewController.m */; };
 		B24A67A0182CB86F005DB707 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = B24A679D182CB86F005DB707 /* UserData.m */; };
@@ -42,6 +63,10 @@
 		B2752129182A3B2800115F6F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B2752128182A3B2800115F6F /* Default.png */; };
 		B275212D182A3EF400115F6F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B275212B182A3EF400115F6F /* MainViewController.m */; };
 		B275212E182A3EF400115F6F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B275212C182A3EF400115F6F /* MainViewController.xib */; };
+		B2B750F018892EE500464292 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B750EF18892EE500464292 /* GameKit.framework */; };
+		B2B750F81889335B00464292 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B750F31889335B00464292 /* GameCenterManager.m */; };
+		B2B750F91889335B00464292 /* NSDataAES256.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B750F51889335B00464292 /* NSDataAES256.m */; };
+		B2B750FA1889335B00464292 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B750F71889335B00464292 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +85,39 @@
 		B2205CD8180BDF2D00591675 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2205CD9180BDF2D00591675 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B2205CE6180BDF2D00591675 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B22C04E1188786570022DDB5 /* level_9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_9.txt; sourceTree = "<group>"; };
+		B22C04E2188786570022DDB5 /* level_10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_10.txt; sourceTree = "<group>"; };
+		B22C04E3188786570022DDB5 /* level_11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_11.txt; sourceTree = "<group>"; };
+		B22C04E4188786570022DDB5 /* level_12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_12.txt; sourceTree = "<group>"; };
+		B22C04E5188786570022DDB5 /* level_13.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_13.txt; sourceTree = "<group>"; };
+		B22C04E6188786570022DDB5 /* level_14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_14.txt; sourceTree = "<group>"; };
+		B22C04E7188786570022DDB5 /* level_15.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_15.txt; sourceTree = "<group>"; };
+		B22C04F01887BDE50022DDB5 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		B22C04F11887BDE50022DDB5 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		B22C04F31887BDE50022DDB5 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		B22C04F41887BDE50022DDB5 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		B22C04F51887BDE50022DDB5 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		B22C04F61887BDE50022DDB5 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		B22C04F71887BDE50022DDB5 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		B22C04F81887BDE50022DDB5 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		B22C04F91887BDE50022DDB5 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		B22C04FA1887BDE50022DDB5 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		B22C04FB1887BDE50022DDB5 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		B22C04FC1887BDE50022DDB5 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		B22C04FE1887BDE50022DDB5 /* libUMFeedback.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMFeedback.a; sourceTree = "<group>"; };
+		B22C04FF1887BDE50022DDB5 /* umFeedback.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = umFeedback.bundle; sourceTree = "<group>"; };
+		B22C05001887BDE50022DDB5 /* UMFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMFeedback.h; sourceTree = "<group>"; };
+		B22C05051887C1E10022DDB5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B22C05071887C25D0022DDB5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B22C05091887C2650022DDB5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B22C050B1887C2700022DDB5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B22C050D1887C2C40022DDB5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B22C050F1887C3090022DDB5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B22C05111887C81A0022DDB5 /* btn_return_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_return_normal.png; sourceTree = "<group>"; };
+		B22C05121887C81A0022DDB5 /* btn_return_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_return_pressed.png; sourceTree = "<group>"; };
+		B22C05151887C86A0022DDB5 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		B22C05161887C86A0022DDB5 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		B22C05171887C86A0022DDB5 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		B24A6798182CB86F005DB707 /* BaseNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavViewController.h; sourceTree = "<group>"; };
 		B24A6799182CB86F005DB707 /* BaseNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavViewController.m; sourceTree = "<group>"; };
 		B24A679A182CB86F005DB707 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
@@ -95,6 +153,13 @@
 		B275212A182A3EF400115F6F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B275212B182A3EF400115F6F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B275212C182A3EF400115F6F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		B2B750EF18892EE500464292 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		B2B750F21889335B00464292 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		B2B750F31889335B00464292 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		B2B750F41889335B00464292 /* NSDataAES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAES256.h; sourceTree = "<group>"; };
+		B2B750F51889335B00464292 /* NSDataAES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAES256.m; sourceTree = "<group>"; };
+		B2B750F61889335B00464292 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B2B750F71889335B00464292 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		B2C3D73C182B423000B59503 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -103,9 +168,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B750F018892EE500464292 /* GameKit.framework in Frameworks */,
+				B22C05101887C3090022DDB5 /* AdSupport.framework in Frameworks */,
+				B22C050E1887C2C40022DDB5 /* StoreKit.framework in Frameworks */,
+				B22C050C1887C2700022DDB5 /* SystemConfiguration.framework in Frameworks */,
+				B22C050A1887C2650022DDB5 /* MessageUI.framework in Frameworks */,
+				B22C05081887C25D0022DDB5 /* AudioToolbox.framework in Frameworks */,
+				B22C05061887C1E10022DDB5 /* libz.dylib in Frameworks */,
+				B22C05031887BDE50022DDB5 /* libUMFeedback.a in Frameworks */,
 				B2205CCA180BDF2D00591675 /* CoreGraphics.framework in Frameworks */,
 				B2205CCC180BDF2D00591675 /* UIKit.framework in Frameworks */,
 				B2205CC8180BDF2D00591675 /* Foundation.framework in Frameworks */,
+				B22C05011887BDE50022DDB5 /* libMobClickLibrary.a in Frameworks */,
+				B22C05021887BDE50022DDB5 /* libGoogleAdMobAds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +190,13 @@
 		B2199BD31831D07F00B5EBD5 /* levels */ = {
 			isa = PBXGroup;
 			children = (
+				B22C04E1188786570022DDB5 /* level_9.txt */,
+				B22C04E2188786570022DDB5 /* level_10.txt */,
+				B22C04E3188786570022DDB5 /* level_11.txt */,
+				B22C04E4188786570022DDB5 /* level_12.txt */,
+				B22C04E5188786570022DDB5 /* level_13.txt */,
+				B22C04E6188786570022DDB5 /* level_14.txt */,
+				B22C04E7188786570022DDB5 /* level_15.txt */,
 				B27115E81832119A00824FDE /* level_3.txt */,
 				B27115E91832119A00824FDE /* level_4.txt */,
 				B27115EA1832119A00824FDE /* level_5.txt */,
@@ -147,6 +229,13 @@
 		B2205CC6180BDF2D00591675 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2B750EF18892EE500464292 /* GameKit.framework */,
+				B22C050F1887C3090022DDB5 /* AdSupport.framework */,
+				B22C050D1887C2C40022DDB5 /* StoreKit.framework */,
+				B22C050B1887C2700022DDB5 /* SystemConfiguration.framework */,
+				B22C05091887C2650022DDB5 /* MessageUI.framework */,
+				B22C05071887C25D0022DDB5 /* AudioToolbox.framework */,
+				B22C05051887C1E10022DDB5 /* libz.dylib */,
 				B2C3D73C182B423000B59503 /* MapKit.framework */,
 				B2205CC7180BDF2D00591675 /* Foundation.framework */,
 				B2205CC9180BDF2D00591675 /* CoreGraphics.framework */,
@@ -183,9 +272,49 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B22C04EF1887BDE50022DDB5 /*  友盟统计 */ = {
+			isa = PBXGroup;
+			children = (
+				B22C04F01887BDE50022DDB5 /* libMobClickLibrary.a */,
+				B22C04F11887BDE50022DDB5 /* MobClick.h */,
+			);
+			path = " 友盟统计";
+			sourceTree = "<group>";
+		};
+		B22C04F21887BDE50022DDB5 /* Admob */ = {
+			isa = PBXGroup;
+			children = (
+				B22C04F31887BDE50022DDB5 /* GADAdMobExtras.h */,
+				B22C04F41887BDE50022DDB5 /* GADAdNetworkExtras.h */,
+				B22C04F51887BDE50022DDB5 /* GADAdSize.h */,
+				B22C04F61887BDE50022DDB5 /* GADBannerView.h */,
+				B22C04F71887BDE50022DDB5 /* GADBannerViewDelegate.h */,
+				B22C04F81887BDE50022DDB5 /* GADInterstitial.h */,
+				B22C04F91887BDE50022DDB5 /* GADInterstitialDelegate.h */,
+				B22C04FA1887BDE50022DDB5 /* GADRequest.h */,
+				B22C04FB1887BDE50022DDB5 /* GADRequestError.h */,
+				B22C04FC1887BDE50022DDB5 /* libGoogleAdMobAds.a */,
+			);
+			path = Admob;
+			sourceTree = "<group>";
+		};
+		B22C04FD1887BDE50022DDB5 /* 友盟反馈 */ = {
+			isa = PBXGroup;
+			children = (
+				B22C04FE1887BDE50022DDB5 /* libUMFeedback.a */,
+				B22C04FF1887BDE50022DDB5 /* umFeedback.bundle */,
+				B22C05001887BDE50022DDB5 /* UMFeedback.h */,
+			);
+			path = "友盟反馈";
+			sourceTree = "<group>";
+		};
 		B275210D182A35A400115F6F /* OtherFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				B2B750F11889335B00464292 /* GC Manager */,
+				B22C04EF1887BDE50022DDB5 /*  友盟统计 */,
+				B22C04F21887BDE50022DDB5 /* Admob */,
+				B22C04FD1887BDE50022DDB5 /* 友盟反馈 */,
 			);
 			path = OtherFrameWork;
 			sourceTree = SOURCE_ROOT;
@@ -231,6 +360,8 @@
 		B2752117182A35B100115F6F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B22C05111887C81A0022DDB5 /* btn_return_normal.png */,
+				B22C05121887C81A0022DDB5 /* btn_return_pressed.png */,
 				B24A67A6182CC472005DB707 /* arrow.png */,
 				B2752118182A35B100115F6F /* cat.png */,
 				B2752119182A35B100115F6F /* dot.png */,
@@ -261,8 +392,24 @@
 				B24A67A8182CC4DA005DB707 /* PauseViewController.h */,
 				B24A67A9182CC4DA005DB707 /* PauseViewController.m */,
 				B24A67AA182CC4DA005DB707 /* PauseViewController.xib */,
+				B22C05151887C86A0022DDB5 /* SettingViewController.h */,
+				B22C05161887C86A0022DDB5 /* SettingViewController.m */,
+				B22C05171887C86A0022DDB5 /* SettingViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B2B750F11889335B00464292 /* GC Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B2B750F21889335B00464292 /* GameCenterManager.h */,
+				B2B750F31889335B00464292 /* GameCenterManager.m */,
+				B2B750F41889335B00464292 /* NSDataAES256.h */,
+				B2B750F51889335B00464292 /* NSDataAES256.m */,
+				B2B750F61889335B00464292 /* Reachability.h */,
+				B2B750F71889335B00464292 /* Reachability.m */,
+			);
+			path = "GC Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,24 +465,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				B27115F11832119A00824FDE /* level_6.txt in Resources */,
+				B22C05191887C86A0022DDB5 /* SettingViewController.xib in Resources */,
 				B2752129182A3B2800115F6F /* Default.png in Resources */,
 				B2199BD51831D14700B5EBD5 /* level_1.txt in Resources */,
 				B2752123182A35B100115F6F /* cat.png in Resources */,
 				B2752124182A35B100115F6F /* dot.png in Resources */,
+				B22C05141887C81A0022DDB5 /* btn_return_pressed.png in Resources */,
+				B22C05041887BDE50022DDB5 /* umFeedback.bundle in Resources */,
 				B2199BDC18320C6800B5EBD5 /* level_2.txt in Resources */,
 				B27115F01832119A00824FDE /* level_5.txt in Resources */,
 				B24A67A7182CC472005DB707 /* arrow.png in Resources */,
+				B22C04ED188786570022DDB5 /* level_14.txt in Resources */,
 				B275212E182A3EF400115F6F /* MainViewController.xib in Resources */,
 				B27115F31832119A00824FDE /* level_8.txt in Resources */,
 				B27115EF1832119A00824FDE /* level_4.txt in Resources */,
 				B24A67AC182CC4DA005DB707 /* PauseViewController.xib in Resources */,
 				B2205CD4180BDF2D00591675 /* InfoPlist.strings in Resources */,
+				B22C04EC188786570022DDB5 /* level_13.txt in Resources */,
+				B22C04EE188786570022DDB5 /* level_15.txt in Resources */,
+				B22C04EA188786570022DDB5 /* level_11.txt in Resources */,
+				B22C04E9188786570022DDB5 /* level_10.txt in Resources */,
+				B22C04EB188786570022DDB5 /* level_12.txt in Resources */,
 				B27115EE1832119A00824FDE /* level_3.txt in Resources */,
 				B27115F21832119A00824FDE /* level_7.txt in Resources */,
 				B2205CE7180BDF2D00591675 /* Images.xcassets in Resources */,
 				B2752127182A35B100115F6F /* GameViewController.xib in Resources */,
+				B22C04E8188786570022DDB5 /* level_9.txt in Resources */,
 				B24A67A5182CC1CF005DB707 /* ResultViewController.xib in Resources */,
 				B2752125182A35B100115F6F /* dot_selected.png in Resources */,
+				B22C05131887C81A0022DDB5 /* btn_return_normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,16 +507,20 @@
 				B2752126182A35B100115F6F /* GameViewController.m in Sources */,
 				B24A67AB182CC4DA005DB707 /* PauseViewController.m in Sources */,
 				B24A679E182CB86F005DB707 /* BaseNavViewController.m in Sources */,
+				B22C05181887C86A0022DDB5 /* SettingViewController.m in Sources */,
 				B2752120182A35B100115F6F /* Cat.m in Sources */,
 				B2205CDA180BDF2D00591675 /* AppDelegate.m in Sources */,
 				B24A67A4182CC1CF005DB707 /* ResultViewController.m in Sources */,
 				B2205CD6180BDF2D00591675 /* main.m in Sources */,
 				B24A679F182CB86F005DB707 /* BasicViewController.m in Sources */,
 				B275212D182A3EF400115F6F /* MainViewController.m in Sources */,
+				B2B750F91889335B00464292 /* NSDataAES256.m in Sources */,
 				B2199BD81831D19500B5EBD5 /* ManagerFile.m in Sources */,
+				B2B750F81889335B00464292 /* GameCenterManager.m in Sources */,
 				B2752121182A35B100115F6F /* Dot.m in Sources */,
 				B24A67A0182CB86F005DB707 /* UserData.m in Sources */,
 				B2752122182A35B100115F6F /* DotsScene.m in Sources */,
+				B2B750FA1889335B00464292 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +618,15 @@
 				GCC_PREFIX_HEADER = "BoxCat/BoxCat-Prefix.pch";
 				INFOPLIST_FILE = "BoxCat/BoxCat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/yangfabing/Desktop/BoxCat/OtherFrameWork/\\ 友盟统计",
+					/Users/yangfabing/Desktop/BoxCat/OtherFrameWork/Admob,
+					"/Users/yangfabing/Desktop/BoxCat/OtherFrameWork/友盟反馈",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "25C90F3A-1F83-4681-ABF6-BE382B9E701B";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -470,7 +640,15 @@
 				GCC_PREFIX_HEADER = "BoxCat/BoxCat-Prefix.pch";
 				INFOPLIST_FILE = "BoxCat/BoxCat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/yangfabing/Desktop/BoxCat/OtherFrameWork/\\ 友盟统计",
+					/Users/yangfabing/Desktop/BoxCat/OtherFrameWork/Admob,
+					"/Users/yangfabing/Desktop/BoxCat/OtherFrameWork/友盟反馈",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "25C90F3A-1F83-4681-ABF6-BE382B9E701B";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};

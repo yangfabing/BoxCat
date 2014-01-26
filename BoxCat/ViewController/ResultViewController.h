@@ -13,7 +13,7 @@
 
 
 @property (nonatomic, assign) BOOL isSuccess;
-@property (nonatomic, assign) GameViewController *gameController;
+@property (nonatomic, weak) GameViewController *gameController;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *totalScoreBtn;

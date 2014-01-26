@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class GameViewController;
 @interface PauseViewController : UIViewController
+
+@property (nonatomic, weak) GameViewController *gameController;
 
 
 - (IBAction)onCancelClick:(id)sender;
