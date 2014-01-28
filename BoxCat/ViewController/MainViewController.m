@@ -14,6 +14,8 @@
 
 #import "GameCenterManager.h"
 
+#import "LevelViewController.h"
+
 @interface MainViewController ()<GameCenterManagerDelegate>
 
 @end
@@ -72,6 +74,12 @@
 
 - (IBAction)onSettingClick:(id)sender {
     SettingViewController *controller =[[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (IBAction)onSearchLevelClick:(id)sender {
+    
+    LevelViewController *controller = [[LevelViewController alloc] initWithNibName:@"LevelViewController" bundle:nil];
     [self.navigationController pushViewController:controller animated:YES];
 }
 

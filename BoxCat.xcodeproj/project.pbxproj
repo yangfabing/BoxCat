@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B205026D1895066D00815FD4 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20502681895066D00815FD4 /* RecommendViewController.m */; };
+		B205026E1895066D00815FD4 /* RecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20502691895066D00815FD4 /* RecommendViewController.xib */; };
+		B205026F1895066D00815FD4 /* RecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B205026B1895066D00815FD4 /* RecommendCell.m */; };
+		B20502701895066D00815FD4 /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B205026C1895066D00815FD4 /* RecommendCell.xib */; };
+		B205027418950CFD00815FD4 /* LevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B205027218950CFD00815FD4 /* LevelViewController.m */; };
+		B205027518950CFD00815FD4 /* LevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B205027318950CFD00815FD4 /* LevelViewController.xib */; };
+		B20502781895116400815FD4 /* LevelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B20502771895116400815FD4 /* LevelCell.m */; };
+		B205027A1895117A00815FD4 /* LevelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20502791895117A00815FD4 /* LevelCell.xib */; };
 		B2199BD51831D14700B5EBD5 /* level_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B2199BD41831D14700B5EBD5 /* level_1.txt */; };
 		B2199BD81831D19500B5EBD5 /* ManagerFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B2199BD71831D19500B5EBD5 /* ManagerFile.m */; };
 		B2199BDC18320C6800B5EBD5 /* level_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = B2199BDB18320C6800B5EBD5 /* level_2.txt */; };
@@ -52,6 +60,9 @@
 		B27115F11832119A00824FDE /* level_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = B27115EB1832119A00824FDE /* level_6.txt */; };
 		B27115F21832119A00824FDE /* level_7.txt in Resources */ = {isa = PBXBuildFile; fileRef = B27115EC1832119A00824FDE /* level_7.txt */; };
 		B27115F31832119A00824FDE /* level_8.txt in Resources */ = {isa = PBXBuildFile; fileRef = B27115ED1832119A00824FDE /* level_8.txt */; };
+		B273BB2618975D5300E8A435 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = B273BB2218975D5300E8A435 /* icon57.png */; };
+		B273BB2818975D5300E8A435 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = B273BB2418975D5300E8A435 /* icon114.png */; };
+		B273BB2918975D5300E8A435 /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = B273BB2518975D5300E8A435 /* icon120.png */; };
 		B2752120182A35B100115F6F /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = B2752111182A35B100115F6F /* Cat.m */; };
 		B2752121182A35B100115F6F /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = B2752113182A35B100115F6F /* Dot.m */; };
 		B2752122182A35B100115F6F /* DotsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B2752115182A35B100115F6F /* DotsScene.m */; };
@@ -70,6 +81,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B20502671895066D00815FD4 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		B20502681895066D00815FD4 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		B20502691895066D00815FD4 /* RecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
+		B205026A1895066D00815FD4 /* RecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCell.h; sourceTree = "<group>"; };
+		B205026B1895066D00815FD4 /* RecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendCell.m; sourceTree = "<group>"; };
+		B205026C1895066D00815FD4 /* RecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCell.xib; sourceTree = "<group>"; };
+		B205027118950CFD00815FD4 /* LevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelViewController.h; sourceTree = "<group>"; };
+		B205027218950CFD00815FD4 /* LevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelViewController.m; sourceTree = "<group>"; };
+		B205027318950CFD00815FD4 /* LevelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelViewController.xib; sourceTree = "<group>"; };
+		B20502761895116400815FD4 /* LevelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelCell.h; sourceTree = "<group>"; };
+		B20502771895116400815FD4 /* LevelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelCell.m; sourceTree = "<group>"; };
+		B20502791895117A00815FD4 /* LevelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelCell.xib; sourceTree = "<group>"; };
 		B2199BD41831D14700B5EBD5 /* level_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_1.txt; sourceTree = "<group>"; };
 		B2199BD61831D19500B5EBD5 /* ManagerFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerFile.h; sourceTree = "<group>"; };
 		B2199BD71831D19500B5EBD5 /* ManagerFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerFile.m; sourceTree = "<group>"; };
@@ -137,6 +160,9 @@
 		B27115EB1832119A00824FDE /* level_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_6.txt; sourceTree = "<group>"; };
 		B27115EC1832119A00824FDE /* level_7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_7.txt; sourceTree = "<group>"; };
 		B27115ED1832119A00824FDE /* level_8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_8.txt; sourceTree = "<group>"; };
+		B273BB2218975D5300E8A435 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		B273BB2418975D5300E8A435 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
+		B273BB2518975D5300E8A435 /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
 		B2752110182A35B100115F6F /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
 		B2752111182A35B100115F6F /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		B2752112182A35B100115F6F /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
@@ -263,6 +289,9 @@
 		B2205CD0180BDF2D00591675 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B273BB2218975D5300E8A435 /* icon57.png */,
+				B273BB2418975D5300E8A435 /* icon114.png */,
+				B273BB2518975D5300E8A435 /* icon120.png */,
 				B2752128182A3B2800115F6F /* Default.png */,
 				B2205CD1180BDF2D00591675 /* BoxCat-Info.plist */,
 				B2205CD2180BDF2D00591675 /* InfoPlist.strings */,
@@ -395,6 +424,18 @@
 				B22C05151887C86A0022DDB5 /* SettingViewController.h */,
 				B22C05161887C86A0022DDB5 /* SettingViewController.m */,
 				B22C05171887C86A0022DDB5 /* SettingViewController.xib */,
+				B20502671895066D00815FD4 /* RecommendViewController.h */,
+				B20502681895066D00815FD4 /* RecommendViewController.m */,
+				B20502691895066D00815FD4 /* RecommendViewController.xib */,
+				B205026A1895066D00815FD4 /* RecommendCell.h */,
+				B205026B1895066D00815FD4 /* RecommendCell.m */,
+				B205026C1895066D00815FD4 /* RecommendCell.xib */,
+				B205027118950CFD00815FD4 /* LevelViewController.h */,
+				B205027218950CFD00815FD4 /* LevelViewController.m */,
+				B205027318950CFD00815FD4 /* LevelViewController.xib */,
+				B20502761895116400815FD4 /* LevelCell.h */,
+				B20502771895116400815FD4 /* LevelCell.m */,
+				B20502791895117A00815FD4 /* LevelCell.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -466,14 +507,18 @@
 			files = (
 				B27115F11832119A00824FDE /* level_6.txt in Resources */,
 				B22C05191887C86A0022DDB5 /* SettingViewController.xib in Resources */,
+				B205027A1895117A00815FD4 /* LevelCell.xib in Resources */,
 				B2752129182A3B2800115F6F /* Default.png in Resources */,
 				B2199BD51831D14700B5EBD5 /* level_1.txt in Resources */,
 				B2752123182A35B100115F6F /* cat.png in Resources */,
 				B2752124182A35B100115F6F /* dot.png in Resources */,
 				B22C05141887C81A0022DDB5 /* btn_return_pressed.png in Resources */,
 				B22C05041887BDE50022DDB5 /* umFeedback.bundle in Resources */,
+				B205026E1895066D00815FD4 /* RecommendViewController.xib in Resources */,
 				B2199BDC18320C6800B5EBD5 /* level_2.txt in Resources */,
 				B27115F01832119A00824FDE /* level_5.txt in Resources */,
+				B205027518950CFD00815FD4 /* LevelViewController.xib in Resources */,
+				B273BB2918975D5300E8A435 /* icon120.png in Resources */,
 				B24A67A7182CC472005DB707 /* arrow.png in Resources */,
 				B22C04ED188786570022DDB5 /* level_14.txt in Resources */,
 				B275212E182A3EF400115F6F /* MainViewController.xib in Resources */,
@@ -490,7 +535,10 @@
 				B27115F21832119A00824FDE /* level_7.txt in Resources */,
 				B2205CE7180BDF2D00591675 /* Images.xcassets in Resources */,
 				B2752127182A35B100115F6F /* GameViewController.xib in Resources */,
+				B273BB2618975D5300E8A435 /* icon57.png in Resources */,
+				B273BB2818975D5300E8A435 /* icon114.png in Resources */,
 				B22C04E8188786570022DDB5 /* level_9.txt in Resources */,
+				B20502701895066D00815FD4 /* RecommendCell.xib in Resources */,
 				B24A67A5182CC1CF005DB707 /* ResultViewController.xib in Resources */,
 				B2752125182A35B100115F6F /* dot_selected.png in Resources */,
 				B22C05131887C81A0022DDB5 /* btn_return_normal.png in Resources */,
@@ -515,12 +563,16 @@
 				B24A679F182CB86F005DB707 /* BasicViewController.m in Sources */,
 				B275212D182A3EF400115F6F /* MainViewController.m in Sources */,
 				B2B750F91889335B00464292 /* NSDataAES256.m in Sources */,
+				B205027418950CFD00815FD4 /* LevelViewController.m in Sources */,
+				B205026F1895066D00815FD4 /* RecommendCell.m in Sources */,
 				B2199BD81831D19500B5EBD5 /* ManagerFile.m in Sources */,
 				B2B750F81889335B00464292 /* GameCenterManager.m in Sources */,
 				B2752121182A35B100115F6F /* Dot.m in Sources */,
 				B24A67A0182CB86F005DB707 /* UserData.m in Sources */,
 				B2752122182A35B100115F6F /* DotsScene.m in Sources */,
+				B20502781895116400815FD4 /* LevelCell.m in Sources */,
 				B2B750FA1889335B00464292 /* Reachability.m in Sources */,
+				B205026D1895066D00815FD4 /* RecommendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

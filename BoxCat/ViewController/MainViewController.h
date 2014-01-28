@@ -13,4 +13,7 @@
 - (IBAction)StartGame:(id)sender;
 
 - (IBAction)onSettingClick:(id)sender;
+
+- (IBAction)onSearchLevelClick:(id)sender;
+
 @end

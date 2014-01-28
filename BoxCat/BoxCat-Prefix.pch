@@ -23,3 +23,5 @@
 #define  SHOW_ADVIEW   YES
 
 #define Leaderboard_ID    @"total_score"   
+
+#define LEVELNUM    15

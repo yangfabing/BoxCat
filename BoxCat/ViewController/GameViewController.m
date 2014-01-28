@@ -44,12 +44,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden = YES;
-    
-    
     [self loadADView];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
 - (BOOL)shouldAutorotate
 {
     return YES;
@@ -84,6 +86,7 @@
 //通过关卡初始化
 -(void)restartGameWithCurrentLevel:(NSInteger)level
 {
+    NSLog(@"level:%d",level);
     if (self.scene)
     {
         [self.scene removeFromSuperview];
@@ -103,8 +106,9 @@
         }
         redArray = array;
     }
-    redDotsCount = redArray.count;
-    
+//    redDotsCount = redArray.count;
+    redDotsCount = 0;
+
     [_scene installAllDotWithArray:redArray];
     _scene.delegate = self;
     [self.view addSubview:_scene];
@@ -136,7 +140,7 @@
 //刷新分数
 -(void)refreshScore
 {
-    currentScore = (81 - redDotsCount);
+    currentScore = (100 - redDotsCount);
     self.scoreLabel.text = [NSString stringWithFormat:@"%d",currentScore];
     [self randomRefreshGold];
 }

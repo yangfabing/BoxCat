@@ -8,6 +8,7 @@
 
 #import "BasicViewController.h"
 
-@interface SettingViewController : BasicViewController
+@interface SettingViewController : BasicViewController<UITableViewDataSource, UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
