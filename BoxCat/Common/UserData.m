@@ -43,7 +43,7 @@ static UserData *sharedData;
     self.totalScore = [defaults integerForKey:@"TotalScore"];
     self.currentLevel = [defaults integerForKey:@"CurrentLevel"];
     self.totalLevelScore = [defaults valueForKey:@"TotalLevelScore"];
-    
+    self.firstTag = [defaults boolForKey:@"firstTag"];
 }
 
 //保存NSUserDefaults数据
@@ -54,7 +54,7 @@ static UserData *sharedData;
     [defaults setInteger:self.totalScore forKey:@"TotalScore"];
     [defaults setInteger:self.currentLevel forKey:@"CurrentLevel"];
     [defaults setValue:self.totalLevelScore forKey:@"TotalLevelScore"];
-    
+    [defaults setBool:self.firstTag forKey:@"firstTag"];
     [defaults synchronize];
 }
 

@@ -15,14 +15,13 @@
 @property (nonatomic, assign) BOOL isSuccess;
 @property (nonatomic, weak) GameViewController *gameController;
 
-
-@property (weak, nonatomic) IBOutlet UIButton *totalScoreBtn;
-@property (weak, nonatomic) IBOutlet UIButton *totalGoldBtn;
+@property (weak, nonatomic) IBOutlet UILabel *totalScoreLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet UILabel *currentScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bestScoreLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *contiuneBtn;
 
 
 - (IBAction)onRestartClick:(id)sender;

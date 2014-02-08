@@ -14,7 +14,7 @@
 
 #import "GADBannerView.h"
 #import "GADRequest.h"
-
+#import "DoAlertView.h"
 
 @interface GameViewController ()<DotsResultDelegate, GADBannerViewDelegate>
 {
@@ -23,6 +23,8 @@
     NSInteger redDotsCount;
     NSInteger currentScore;
     NSArray *redArray;
+    
+    DoAlertView *doAlertView;
     
 }
 
@@ -45,6 +47,13 @@
 {
     [super viewDidLoad];
     [self loadADView];
+    BOOL tag = [UserData sharedUserData].firstTag;
+    if (!tag) {
+        [self showFristAlertView];
+        [UserData sharedUserData].firstTag = YES;
+        [[UserData sharedUserData] saveUserData];
+    }
+    [self restartGameWithCurrentLevel:self.currentLevel];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -86,7 +95,9 @@
 //通过关卡初始化
 -(void)restartGameWithCurrentLevel:(NSInteger)level
 {
-    NSLog(@"level:%d",level);
+//    NSLog(@"level:%d",level);
+    self.levelLabel.text = [NSString stringWithFormat:@"%d",level];
+    
     if (self.scene)
     {
         [self.scene removeFromSuperview];
@@ -126,7 +137,7 @@
     }
     self.scene = [[DotsScene alloc] initWithSize:CGSizeMake(320, 320)];
     
-    redDotsCount = redArray.count;
+    redDotsCount = 0;
     
     [_scene installAllDotWithArray:redArray];
     _scene.delegate = self;
@@ -149,12 +160,12 @@
 //随机给予用户金币
 -(void)randomRefreshGold
 {
-    NSInteger rand = arc4random()%10;
-    if (rand == 1) {
-        [UserData sharedUserData].totalGold += 5;
-    }
-    
-    [self.goldLabel setText:[NSString stringWithFormat:@"%d",[UserData sharedUserData].totalGold]];
+//    NSInteger rand = arc4random()%10;
+//    if (rand == 1) {
+//        [UserData sharedUserData].totalGold += 5;
+//    }
+//    
+//    [self.goldLabel setText:[NSString stringWithFormat:@"%d",[UserData sharedUserData].totalGold]];
 }
 
 #pragma mark - 
@@ -209,6 +220,28 @@
      }];
 }
 
+
+#pragma mark - 
+#pragma mark - show AlertView
+
+-(void)showFristAlertView
+{
+    doAlertView = [[DoAlertView alloc] init];
+    doAlertView.nAnimationType = DoTransitionStyleLine;
+    doAlertView.dRound = 2.0;
+    
+    [doAlertView doAlert:nil body:@"点击“绿色”圆点来围住“蓝色”圆点,让它无路可逃~~~" duration:0 done:^(DoAlertView *alertView) {
+//        NSLog(@"showed");
+    }];
+    
+    
+[NSTimer scheduledTimerWithTimeInterval:8.0 target:self selector:@selector(hideAlertView) userInfo:nil repeats:NO];
+}
+
+-(void)hideAlertView
+{
+    [doAlertView hideAlert];
+}
 
 #pragma  mark - 
 #pragma mark - AD Delegate

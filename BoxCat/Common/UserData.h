@@ -18,6 +18,8 @@
    
 }
 
+//标记是否第一次启动应用
+@property (nonatomic ,assign) BOOL firstTag;
 
 //当前关卡数
 @property (nonatomic, assign) NSInteger currentLevel;

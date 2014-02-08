@@ -53,7 +53,13 @@
     [self.navigationController popViewControllerAnimated:YES];
     if (self.gameController)
     {
-       [UserData sharedUserData].currentLevel++;
+        if ([UserData sharedUserData].currentLevel >= LEVELNUM)
+        {
+            [UserData sharedUserData].currentLevel = 1;
+        }else
+        {
+            [UserData sharedUserData].currentLevel++;
+        }
         NSInteger level = [UserData sharedUserData].currentLevel;
         [self.gameController restartGameWithCurrentLevel:level];
     }
@@ -67,11 +73,12 @@
 
 -(void)installViews
 {
+
     if (self.isSuccess)
     {
         [self.resultLabel setText:@"太棒啦"];
         [self.currentScoreLabel setHidden:NO];
-        [self.currentScoreLabel setText:[NSString stringWithFormat:@"本次得分：%d",[UserData sharedUserData].currentScore]];
+        [self.currentScoreLabel setText:[NSString stringWithFormat:@"%d",[UserData sharedUserData].currentScore]];
         
         [self saveScoreToGameCenter];
     }else
@@ -80,13 +87,13 @@
         [self.currentScoreLabel setHidden:YES];
     }
     
-    [self.totalGoldBtn setTitle:[NSString stringWithFormat:@"金币：%d",[UserData sharedUserData].totalGold] forState:UIControlStateNormal];
-     [self.totalScoreBtn setTitle:[NSString stringWithFormat:@"总分：%d",[UserData sharedUserData].totalScore] forState:UIControlStateNormal];
+//    [self.totalGoldBtn setTitle:[NSString stringWithFormat:@"金币：%d",[UserData sharedUserData].totalGold] forState:UIControlStateNormal];
+     self.totalScoreLabel.text = [NSString stringWithFormat:@"%d",[UserData sharedUserData].totalScore];
     
     NSInteger bestScore = [[UserData sharedUserData] getCurrentBestScoreWithLevel:[UserData sharedUserData].currentLevel];
     NSInteger currentScore = [UserData sharedUserData].currentScore;
-    [self.bestScoreLabel setText:[NSString stringWithFormat:@"个人历史最佳得分：%d",bestScore]];
-    [self.currentScoreLabel setText:[NSString stringWithFormat:@"本次得分：%d",currentScore]];
+    [self.bestScoreLabel setText:[NSString stringWithFormat:@"%d",bestScore]];
+    [self.currentScoreLabel setText:[NSString stringWithFormat:@"%d",currentScore]];
     if (bestScore < currentScore)
     {
         [[UserData sharedUserData] saveBestScore:currentScore withLevel:[UserData sharedUserData].currentLevel];

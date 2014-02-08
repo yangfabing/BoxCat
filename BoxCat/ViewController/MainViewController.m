@@ -68,8 +68,9 @@
         level = 1;
         [UserData sharedUserData].currentLevel = 1;
     }
-    [controller restartGameWithCurrentLevel:level];
+    controller.currentLevel = level;
     [self.navigationController pushViewController:controller animated:YES];
+
 }
 
 - (IBAction)onSettingClick:(id)sender {

@@ -23,7 +23,6 @@
 //    [MobClick startWithAppkey:UMENG_APPKEY reportPolicy:REALTIME channelId:nil];
 //    [MobClick setLogEnabled:YES];
     
-//    [UMFeedback showFeedback:self withAppkey:UMENG_APPKEY];
 
     //主程序视图加载
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

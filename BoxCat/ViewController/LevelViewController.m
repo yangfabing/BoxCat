@@ -74,7 +74,7 @@
     NSLog(@"btn tag:%d",btn.tag);
     GameViewController *controller = [[GameViewController alloc] initWithNibName:@"GameViewController" bundle:nil];
     [UserData sharedUserData].currentLevel = btn.tag;
-    [controller restartGameWithCurrentLevel:btn.tag];
+    controller.currentLevel = btn.tag;
     [self.navigationController pushViewController:controller animated:YES];
 
     

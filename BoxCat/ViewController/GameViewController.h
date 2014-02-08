@@ -10,11 +10,13 @@
 
 @interface GameViewController : UIViewController
 
+@property (nonatomic ,assign) NSInteger currentLevel;
 
 @property (weak, nonatomic) IBOutlet UIButton *scoreButton;
 @property (weak, nonatomic) IBOutlet UIButton *goldBtn;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *goldLabel;
+@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
 
 
 - (IBAction)onPauseClick:(id)sender;

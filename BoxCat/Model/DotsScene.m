@@ -290,7 +290,7 @@
     }
     
     //失败
-        NSLog(@"cat position:%@",NSStringFromCGPoint(self.cat.xyPosition));
+//        NSLog(@"cat position:%@",NSStringFromCGPoint(self.cat.xyPosition));
         if (self.cat.xyPosition.x <= 0 || self.cat.xyPosition.x >= DOT_X -1 || self.cat.xyPosition.y <= 0 || self.cat.xyPosition.y >= DOT_Y -1) {
           
             [self gameFailed];
@@ -358,7 +358,7 @@
     
     
     //移动完成后在判断一下
-    NSLog(@"cat position:%@",NSStringFromCGPoint(self.cat.xyPosition));
+//    NSLog(@"cat position:%@",NSStringFromCGPoint(self.cat.xyPosition));
     if (self.cat.xyPosition.x <= 0 || self.cat.xyPosition.x >= DOT_X -1 || self.cat.xyPosition.y <= 0 || self.cat.xyPosition.y >= DOT_Y -1) {
         
         [self gameFailed];
@@ -394,7 +394,7 @@
     
 //    NSLog(@"==========================================");
     CGPoint catPosition = point;
-    NSLog(@"模拟当前点为：%@",NSStringFromCGPoint(catPosition));
+//    NSLog(@"模拟当前点为：%@",NSStringFromCGPoint(catPosition));
     BOOL isBOX = NO;
     //先从cat所在行开始遍历
     int stepNum = 0;
@@ -405,7 +405,7 @@
         if (dot.isSelected)
         {
             isBOX = YES;
-            NSLog(@"左边路被堵");
+//            NSLog(@"左边路被堵");
             break;
         }else
         {
@@ -415,11 +415,11 @@
     if (isBOX)
     {
         left_boxNum = stepNum;
-        NSLog(@"离左边被堵点步数:%d",stepNum);
+//        NSLog(@"离左边被堵点步数:%d",stepNum);
     }else
     {
         leftNum = stepNum;
-        NSLog(@"到左边边界步数:%d",stepNum);
+//        NSLog(@"到左边边界步数:%d",stepNum);
         
     }
     //右边
@@ -431,7 +431,7 @@
         if (dot.isSelected)
         {
             isBOX = YES;
-            NSLog(@"右边路被堵");
+//            NSLog(@"右边路被堵");
             break;
         }else
         {
@@ -442,11 +442,11 @@
     if (isBOX)
     {
         right_boxNum = stepNum;
-        NSLog(@"离右边被堵点步数:%d",stepNum);
+//        NSLog(@"离右边被堵点步数:%d",stepNum);
     }else
     {
         rightNum = stepNum;
-        NSLog(@"到右边边界步数:%d",stepNum);
+//        NSLog(@"到右边边界步数:%d",stepNum);
         
     }
     
@@ -470,7 +470,7 @@
         if (dot.isSelected)
         {
             isBOX = YES;
-            NSLog(@"左上路被堵");
+//            NSLog(@"左上路被堵");
             break;
         }else
         {
@@ -482,11 +482,11 @@
     if (isBOX)
     {
         leftTop_boxNum = stepNum;
-        NSLog(@"离左上被堵点步数:%d",stepNum);
+//        NSLog(@"离左上被堵点步数:%d",stepNum);
     }else
     {
         lefttopNum = stepNum;
-        NSLog(@"到左上边界步数:%d",stepNum);
+//        NSLog(@"到左上边界步数:%d",stepNum);
         
     }
     
@@ -513,7 +513,7 @@
         if (dot.isSelected)
         {
             isBOX = YES;
-            NSLog(@"右上路被堵");
+//            NSLog(@"右上路被堵");
             break;
         }else
         {
@@ -525,11 +525,11 @@
     if (isBOX)
     {
         rightTop_boxNum = stepNum;
-        NSLog(@"离右上被堵点步数:%d",stepNum);
+//        NSLog(@"离右上被堵点步数:%d",stepNum);
     }else
     {
         rightopNum = stepNum;
-        NSLog(@"到右上边界步数:%d",stepNum);
+//        NSLog(@"到右上边界步数:%d",stepNum);
         
     }
 
@@ -553,7 +553,7 @@
         if (dot.isSelected)
         {
             isBOX = YES;
-            NSLog(@"左下路被堵");
+//            NSLog(@"左下路被堵");
             break;
         }else
         {
@@ -565,11 +565,11 @@
     if (isBOX)
     {
         leftBottom_boxNum = stepNum;
-        NSLog(@"离左下被堵点步数:%d",stepNum);
+//        NSLog(@"离左下被堵点步数:%d",stepNum);
     }else
     {
         leftbottomNum = stepNum;
-        NSLog(@"到左下边界步数:%d",stepNum);
+//        NSLog(@"到左下边界步数:%d",stepNum);
         
     }
     
@@ -594,7 +594,7 @@
         if (dot.isSelected)
         {
             isBOX = YES;
-            NSLog(@"右下路被堵");
+//            NSLog(@"右下路被堵");
             
             break;
         }else
@@ -607,11 +607,11 @@
     if (isBOX)
     {
         rightBottom_boxNum = stepNum;
-        NSLog(@"离右下被堵点步数:%d",stepNum);
+//        NSLog(@"离右下被堵点步数:%d",stepNum);
     }else
     {
         rightbottomNum = stepNum;
-        NSLog(@"到右下边界步数:%d",stepNum);
+//        NSLog(@"到右下边界步数:%d",stepNum);
         
     }
     
