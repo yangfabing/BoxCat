@@ -13,6 +13,7 @@
 
 
 #import "GameCenterManager.h"
+#import "MCSoundBoard.h"
 
 @implementation AppDelegate
 
@@ -34,6 +35,7 @@
     [self.window makeKeyAndVisible];
     
     [[GameCenterManager sharedManager] setupManager];
+    [MCSoundBoard addSoundAtPath:[[NSBundle mainBundle] pathForResource:@"touch.wav" ofType:nil] forKey:@"touchSound"];
     
     return YES;
 }

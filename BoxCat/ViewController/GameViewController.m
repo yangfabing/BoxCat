@@ -16,6 +16,8 @@
 #import "GADRequest.h"
 #import "DoAlertView.h"
 
+#import "MCSoundBoard.h"
+
 @interface GameViewController ()<DotsResultDelegate, GADBannerViewDelegate>
 {
     GADBannerView *admobView;
@@ -174,6 +176,7 @@
 -(void)didTouchDot
 {
     redDotsCount++;
+    [MCSoundBoard playSoundForKey:@"touchSound"];
     [self refreshScore];
 }
 

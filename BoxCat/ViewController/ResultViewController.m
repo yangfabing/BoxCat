@@ -76,14 +76,14 @@
 
     if (self.isSuccess)
     {
-        [self.resultLabel setText:@"太棒啦"];
+        [self.resultLabel setText:@"Good"];
         [self.currentScoreLabel setHidden:NO];
         [self.currentScoreLabel setText:[NSString stringWithFormat:@"%d",[UserData sharedUserData].currentScore]];
         
         [self saveScoreToGameCenter];
     }else
     {
-        [self.resultLabel setText:@"加油哦"];
+        [self.resultLabel setText:@"Failed"];
         [self.currentScoreLabel setHidden:YES];
     }
     

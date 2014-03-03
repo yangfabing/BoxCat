@@ -92,6 +92,9 @@
 		B2B750F81889335B00464292 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B750F31889335B00464292 /* GameCenterManager.m */; };
 		B2B750F91889335B00464292 /* NSDataAES256.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B750F51889335B00464292 /* NSDataAES256.m */; };
 		B2B750FA1889335B00464292 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B750F71889335B00464292 /* Reachability.m */; };
+		B2C632DC18A8F954001863C6 /* 33.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C632DB18A8F954001863C6 /* 33.png */; };
+		B2E8C8A218C0816300467C96 /* touch.wav in Resources */ = {isa = PBXBuildFile; fileRef = B2E8C8A118C0816300467C96 /* touch.wav */; };
+		B2E8C8A618C0819C00467C96 /* MCSoundBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E8C8A518C0819C00467C96 /* MCSoundBoard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -217,6 +220,10 @@
 		B2B750F61889335B00464292 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		B2B750F71889335B00464292 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		B2C3D73C182B423000B59503 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B2C632DB18A8F954001863C6 /* 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 33.png; sourceTree = "<group>"; };
+		B2E8C8A118C0816300467C96 /* touch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = touch.wav; sourceTree = "<group>"; };
+		B2E8C8A418C0819C00467C96 /* MCSoundBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSoundBoard.h; sourceTree = "<group>"; };
+		B2E8C8A518C0819C00467C96 /* MCSoundBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSoundBoard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +345,8 @@
 		B2205CD0180BDF2D00591675 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2E8C8A118C0816300467C96 /* touch.wav */,
+				B2C632DB18A8F954001863C6 /* 33.png */,
 				B202882F18A612EE00BBFB61 /* Default-568h@2x.png */,
 				B202883018A612EE00BBFB61 /* Default@2x.png */,
 				B273BB2218975D5300E8A435 /* icon57.png */,
@@ -391,6 +400,7 @@
 		B275210D182A35A400115F6F /* OtherFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				B2E8C8A318C0819C00467C96 /* PlaySound */,
 				B202881818A5D66300BBFB61 /* DoAlertView */,
 				B2B750F11889335B00464292 /* GC Manager */,
 				B22C04EF1887BDE50022DDB5 /*  友盟统计 */,
@@ -507,6 +517,15 @@
 			path = "GC Manager";
 			sourceTree = "<group>";
 		};
+		B2E8C8A318C0819C00467C96 /* PlaySound */ = {
+			isa = PBXGroup;
+			children = (
+				B2E8C8A418C0819C00467C96 /* MCSoundBoard.h */,
+				B2E8C8A518C0819C00467C96 /* MCSoundBoard.m */,
+			);
+			path = PlaySound;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -564,6 +583,7 @@
 				B202882C18A5D75800BBFB61 /* check.png in Resources */,
 				B205027A1895117A00815FD4 /* LevelCell.xib in Resources */,
 				B2752129182A3B2800115F6F /* Default.png in Resources */,
+				B2C632DC18A8F954001863C6 /* 33.png in Resources */,
 				B202882B18A5D75800BBFB61 /* check_black.png in Resources */,
 				B202883218A612EE00BBFB61 /* Default@2x.png in Resources */,
 				B2199BD51831D14700B5EBD5 /* level_1.txt in Resources */,
@@ -584,6 +604,7 @@
 				B24A67A7182CC472005DB707 /* arrow.png in Resources */,
 				B22C04ED188786570022DDB5 /* level_14.txt in Resources */,
 				B275212E182A3EF400115F6F /* MainViewController.xib in Resources */,
+				B2E8C8A218C0816300467C96 /* touch.wav in Resources */,
 				B27115F31832119A00824FDE /* level_8.txt in Resources */,
 				B27115EF1832119A00824FDE /* level_4.txt in Resources */,
 				B202883518A612FA00BBFB61 /* kuaibo.png in Resources */,
@@ -628,6 +649,7 @@
 				B2205CD6180BDF2D00591675 /* main.m in Sources */,
 				B24A679F182CB86F005DB707 /* BasicViewController.m in Sources */,
 				B275212D182A3EF400115F6F /* MainViewController.m in Sources */,
+				B2E8C8A618C0819C00467C96 /* MCSoundBoard.m in Sources */,
 				B2B750F91889335B00464292 /* NSDataAES256.m in Sources */,
 				B205027418950CFD00815FD4 /* LevelViewController.m in Sources */,
 				B202881D18A5D66300BBFB61 /* DoAlertView.m in Sources */,
@@ -734,6 +756,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoxCat/BoxCat-Prefix.pch";
 				INFOPLIST_FILE = "BoxCat/BoxCat-Info.plist";
@@ -746,7 +769,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "25C90F3A-1F83-4681-ABF6-BE382B9E701B";
+				PROVISIONING_PROFILE = "365E8D31-A1C3-415E-9BD6-0A2CFB0053FA";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -756,6 +779,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoxCat/BoxCat-Prefix.pch";
 				INFOPLIST_FILE = "BoxCat/BoxCat-Info.plist";
@@ -768,7 +792,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "25C90F3A-1F83-4681-ABF6-BE382B9E701B";
+				PROVISIONING_PROFILE = "365E8D31-A1C3-415E-9BD6-0A2CFB0053FA";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
