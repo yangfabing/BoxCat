@@ -276,8 +276,8 @@
     [self.view addSubview:admobView];
     
     // 启动一般性请求并在其中加载广告。
-//    [admobView loadRequest:[GADRequest request]];
-    [admobView loadRequest:[self createRequest]];
+    [admobView loadRequest:[GADRequest request]];
+//    [admobView loadRequest:[self createRequest]];
     
 }
 

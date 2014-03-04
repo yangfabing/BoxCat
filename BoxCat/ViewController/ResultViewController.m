@@ -76,15 +76,15 @@
 
     if (self.isSuccess)
     {
-        [self.resultLabel setText:@"Good"];
+        [self.resultLabel setText:@"Good!"];
         [self.currentScoreLabel setHidden:NO];
         [self.currentScoreLabel setText:[NSString stringWithFormat:@"%d",[UserData sharedUserData].currentScore]];
         
         [self saveScoreToGameCenter];
     }else
     {
-        [self.resultLabel setText:@"Failed"];
-        [self.currentScoreLabel setHidden:YES];
+        [self.resultLabel setText:@"Failed!"];
+//        [self.currentScoreLabel setHidden:YES];
     }
     
 //    [self.totalGoldBtn setTitle:[NSString stringWithFormat:@"金币：%d",[UserData sharedUserData].totalGold] forState:UIControlStateNormal];

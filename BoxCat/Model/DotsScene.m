@@ -55,7 +55,7 @@
     for (UITouch *touch in touches)
     {
         CGPoint location = [touch locationInView:self];
-        NSLog(@"location:%@",NSStringFromCGPoint(location));
+//        NSLog(@"location:%@",NSStringFromCGPoint(location));
         
         for (NSArray *tempArray in self.dotsArray)
         {
@@ -63,7 +63,7 @@
             {
                 if (CGRectContainsPoint(dot.frame, location))
                 {
-                    NSLog(@"touched %@",NSStringFromCGPoint(dot.xyPosition));
+//                    NSLog(@"touched %@",NSStringFromCGPoint(dot.xyPosition));
                     //如果dot未被选中过
                     if (!dot.isSelected && !CGPointEqualToPoint(dot.xyPosition, self.cat.xyPosition))
                     {

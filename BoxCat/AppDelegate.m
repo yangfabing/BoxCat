@@ -21,8 +21,8 @@
 {
     
     //开启友盟统计s
-//    [MobClick startWithAppkey:UMENG_APPKEY reportPolicy:REALTIME channelId:nil];
-//    [MobClick setLogEnabled:YES];
+    [MobClick startWithAppkey:UMENG_APPKEY reportPolicy:REALTIME channelId:nil];
+    [MobClick setLogEnabled:YES];
     
 
     //主程序视图加载

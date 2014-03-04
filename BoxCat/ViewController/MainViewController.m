@@ -78,7 +78,7 @@
 //    [self.navigationController pushViewController:controller animated:YES];
     
     //评分
-     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://itunes.apple.com/cn/app/kuai-bo-lian-xi-ren-zhuo-mian/id705075672?mt=8"]]];
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://itunes.apple.com/cn/app/id799327232?mt=8"]]];
 }
 
 - (IBAction)onSearchLevelClick:(id)sender {

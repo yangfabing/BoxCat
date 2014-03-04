@@ -39,6 +39,7 @@
 		B2205CD6180BDF2D00591675 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2205CD5180BDF2D00591675 /* main.m */; };
 		B2205CDA180BDF2D00591675 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2205CD9180BDF2D00591675 /* AppDelegate.m */; };
 		B2205CE7180BDF2D00591675 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2205CE6180BDF2D00591675 /* Images.xcassets */; };
+		B222E33318C4607600746C95 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = B222E33218C4607600746C95 /* iTunesArtwork */; };
 		B22C04E8188786570022DDB5 /* level_9.txt in Resources */ = {isa = PBXBuildFile; fileRef = B22C04E1188786570022DDB5 /* level_9.txt */; };
 		B22C04E9188786570022DDB5 /* level_10.txt in Resources */ = {isa = PBXBuildFile; fileRef = B22C04E2188786570022DDB5 /* level_10.txt */; };
 		B22C04EA188786570022DDB5 /* level_11.txt in Resources */ = {isa = PBXBuildFile; fileRef = B22C04E3188786570022DDB5 /* level_11.txt */; };
@@ -141,6 +142,7 @@
 		B2205CD8180BDF2D00591675 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2205CD9180BDF2D00591675 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B2205CE6180BDF2D00591675 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B222E33218C4607600746C95 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		B22C04E1188786570022DDB5 /* level_9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_9.txt; sourceTree = "<group>"; };
 		B22C04E2188786570022DDB5 /* level_10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_10.txt; sourceTree = "<group>"; };
 		B22C04E3188786570022DDB5 /* level_11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_11.txt; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 		B2205CBB180BDF2D00591675 = {
 			isa = PBXGroup;
 			children = (
+				B222E33218C4607600746C95 /* iTunesArtwork */,
 				B2205CCF180BDF2D00591675 /* BoxCat */,
 				B2205CC6180BDF2D00591675 /* Frameworks */,
 				B2205CC5180BDF2D00591675 /* Products */,
@@ -624,6 +627,7 @@
 				B273BB2618975D5300E8A435 /* icon57.png in Resources */,
 				B273BB2818975D5300E8A435 /* icon114.png in Resources */,
 				B22C04E8188786570022DDB5 /* level_9.txt in Resources */,
+				B222E33318C4607600746C95 /* iTunesArtwork in Resources */,
 				B20502701895066D00815FD4 /* RecommendCell.xib in Resources */,
 				B24A67A5182CC1CF005DB707 /* ResultViewController.xib in Resources */,
 				B202882718A5D75800BBFB61 /* check_black@2x.png in Resources */,
@@ -756,7 +760,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: fabing yang (X3556CJW67)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoxCat/BoxCat-Prefix.pch";
 				INFOPLIST_FILE = "BoxCat/BoxCat-Info.plist";
@@ -769,7 +773,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "365E8D31-A1C3-415E-9BD6-0A2CFB0053FA";
+				PROVISIONING_PROFILE = "7767AFCF-C1CB-4666-975A-07B68FD9DE32";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -779,7 +783,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: fabing yang (X3556CJW67)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoxCat/BoxCat-Prefix.pch";
 				INFOPLIST_FILE = "BoxCat/BoxCat-Info.plist";
@@ -792,7 +796,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "365E8D31-A1C3-415E-9BD6-0A2CFB0053FA";
+				PROVISIONING_PROFILE = "7767AFCF-C1CB-4666-975A-07B68FD9DE32";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
